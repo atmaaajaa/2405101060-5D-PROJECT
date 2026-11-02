@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak &amp; Konsultasi Proyek — Atma Creative</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/globals.css">
+  <link rel="stylesheet" href="assets/css/public.css">
+</head>
+<body>
+
+  <!-- Global Header / Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/images/logo.svg" alt="Atma Creative Logo">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+          <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+          <li><a href="portofolio.html" class="nav-link">Portofolio</a></li>
+          <li><a href="tim.html" class="nav-link">Tim</a></li>
+          <li><a href="kontak.html" class="nav-link active">Kontak</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="kontak.html" class="btn btn-primary btn-sm">Konsultasi Sekarang</a>
+          <button class="menu-toggle" aria-label="Buka Menu Navigasi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="padding: 4.5rem 0 3rem; background: linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-page) 100%);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <div class="section-tag">Mulai Kolaborasi</div>
+        <h1 class="section-title">Kontak &amp; Konsultasi Proyek</h1>
+        <p class="section-subtitle">
+          Ceritakan visi atau kendala teknologi bisnis Anda. Tim kami siap memberikan pandangan strategis dan solusi yang relevan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Form Two-Column Section -->
+  <section class="contact-section">
+    <div class="container">
+      
+      <!-- Alert Container for dynamic feedback -->
+      <div id="form-alert-container"></div>
+
+      <div class="contact-grid">
+        <!-- Left Side: Form Konsultasi -->
+        <div class="contact-card-box">
+          <h2 style="font-size: 1.65rem; margin-bottom: 0.5rem;">Formulir Konsultasi</h2>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 2rem;">
+            Isi rincian di bawah ini untuk menjadwalkan sesi konsultasi daring atau pertemuan langsung bersama konsultan kami.
+          </p>
+
+          <form id="consultation-form" novalidate>
+            <!-- Nama Lengkap -->
+            <div class="form-group">
+              <label for="input-name" class="form-label">Nama Lengkap <span class="required">*</span></label>
+              <input type="text" id="input-name" class="form-control" placeholder="Contoh: Budi Pratama" required>
+              <div id="name-feedback" class="invalid-feedback"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="input-email" class="form-label">Alamat Email Perusahaan / Pribadi <span class="required">*</span></label>
+              <input type="email" id="input-email" class="form-control" placeholder="name@company.com" required>
+              <div id="email-feedback" class="invalid-feedback"></div>
+            </div>
+
+            <!-- Nomor HP / WhatsApp -->
+            <div class="form-group">
+              <label for="input-phone" class="form-label">Nomor HP / WhatsApp Aktif <span class="required">*</span></label>
+              <input type="tel" id="input-phone" class="form-control" placeholder="08xxxxxxxxxx" required>
+              <div id="phone-feedback" class="invalid-feedback"></div>
+            </div>
+
+            <!-- Dropdown Layanan -->
+            <div class="form-group">
+              <label for="input-service" class="form-label">Layanan Yang Diminati <span class="required">*</span></label>
+              <select id="input-service" class="form-control" required>
+                <option value="">-- Pilih Kategori Layanan --</option>
+                <option value="UI/UX Design">UI/UX Design &amp; Product Strategy</option>
+                <option value="IT Consulting">IT Consulting &amp; Cloud Architecture</option>
+                <option value="UI/UX & IT Consulting (Full Package)">UI/UX &amp; IT Consulting (Full Package)</option>
+                <option value="Audit Sistem & Desain">Audit Sistem Eksisting &amp; Usability</option>
+              </select>
+              <div id="service-feedback" class="invalid-feedback"></div>
+            </div>
+
+            <!-- Textarea Pesan -->
+            <div class="form-group">
+              <label for="input-message" class="form-label">Pesan Konsultasi / Gambaran Proyek <span class="required">*</span></label>
+              <textarea id="input-message" rows="5" class="form-control" placeholder="Jelaskan secara singkat latar belakang proyek, estimasi waktu, atau target yang ingin dicapai..." required></textarea>
+              <div id="message-feedback" class="invalid-feedback"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+              Kirim Pesan Konsultasi
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side: Info & Map -->
+        <div>
+          <!-- Info Cards -->
+          <div class="info-cards-list">
+            <div class="info-card-item">
+              <div class="info-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="info-card-content">
+                <h4>Kirimkan Email</h4>
+                <a href="mailto:halo@atmacreative.com">halo@atmacreative.com</a>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-card-icon" style="background-color: #ECFDF5; color: #10B981;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <div class="info-card-content">
+                <h4>Telepon / WhatsApp</h4>
+                <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890 (Respon Cepat)</a>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-card-icon" style="background-color: var(--secondary-light); color: var(--secondary);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="info-card-content">
+                <h4>Alamat Studio</h4>
+                <p style="margin: 0;">Jl. Gajah Mada, Ds. Kembangan, Kec. Sukomoro, Kab. Magetan, Jawa timur 63391, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Google Map Box -->
+          <div class="map-box">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d511.49205232907406!2d111.3997499451896!3d-7.605372062379156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1793655951529!5m2!1sid!2sid" 
+              loading="lazy" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Lokasi Studio Atma Creative">
+            </iframe>
+          </div>
+
+          <!-- Direct Social Media Buttons -->
+          <div class="card" style="padding: 1.5rem; background: var(--bg-surface); text-align: center;">
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.75rem;">Terhubung di Media Sosial</h4>
+            <div style="display: flex; justify-content: center; gap: 0.75rem;">
+              <a href="https://instagram.com/atmacreative" target="_blank" class="btn btn-secondary btn-sm">
+                Instagram
+              </a>
+              <a href="https://linkedin.com/company/atmacreative" target="_blank" class="btn btn-secondary btn-sm">
+                LinkedIn
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary btn-sm" style="background-color: #25D366; border-color: #25D366;">
+                WhatsApp Chat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> Atma Creative. Hak Cipta Dilindungi Undang-Undang.</div>
+        <div><a href="admin/login.html" style="font-size: 0.82rem; opacity: 0.7;">Panel Masuk CMS Admin &rarr;</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script>
+    // Pre-select service from URL query param if present
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const serviceParam = params.get('layanan');
+      if (serviceParam) {
+        const selectEl = document.getElementById('input-service');
+        if (selectEl) {
+          for (let option of selectEl.options) {
+            if (option.value.toLowerCase().includes(serviceParam.toLowerCase())) {
+              option.selected = true;
+              break;
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

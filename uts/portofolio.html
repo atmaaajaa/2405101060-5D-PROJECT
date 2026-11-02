@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Portofolio &amp; Studi Kasus — Atma Creative</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/globals.css">
+  <link rel="stylesheet" href="assets/css/public.css">
+</head>
+<body>
+
+  <!-- Global Header / Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/images/logo.svg" alt="Atma Creative Logo">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+          <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+          <li><a href="portofolio.html" class="nav-link active">Portofolio</a></li>
+          <li><a href="tim.html" class="nav-link">Tim</a></li>
+          <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="kontak.html" class="btn btn-primary btn-sm">Konsultasi Sekarang</a>
+          <button class="menu-toggle" aria-label="Buka Menu Navigasi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="padding: 4.5rem 0 3rem; background: linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-page) 100%);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <div class="section-tag">Karya &amp; Rekam Jejak</div>
+        <h1 class="section-title">Portofolio &amp; Studi Kasus Produk Digital</h1>
+        <p class="section-subtitle">
+          Eksplorasi proyek-proyek terpilih yang membuktikan kekuatan sinergi desain estetis dan stabilitas teknologi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section with Dynamic Filtering -->
+  <section class="portfolio-section">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="portfolio-filter-tabs">
+        <button class="filter-btn active" data-category="Semua">Semua Kategori</button>
+        <button class="filter-btn" data-category="UI/UX Design">UI/UX Design</button>
+        <button class="filter-btn" data-category="IT Consulting">IT Consulting</button>
+      </div>
+
+      <!-- Dynamic Portfolio Grid Container -->
+      <div id="portfolio-grid-container" class="portfolio-grid">
+        <!-- Rendered dynamically by portfolio.js from DataStore -->
+      </div>
+
+      <!-- Bottom Consultation Prompt CTA -->
+      <div class="cta-banner" style="margin-top: 5rem;">
+        <div>
+          <h2>Punya Ide Produk yang Ingin Dikembangkan?</h2>
+          <p>Diskusikan tantangan digital Anda bersama tim Atma Creative dan wujudkan solusi terbaik.</p>
+        </div>
+        <a href="kontak.html" class="btn btn-primary" style="white-space: nowrap;">Mulai Konsultasi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="portfolio-detail-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container" style="max-width: 760px;">
+      <div class="modal-header">
+        <span class="modal-title" style="font-size: 1.15rem; color: var(--text-muted);">Studi Kasus Proyek</span>
+        <button id="modal-close-btn" class="modal-close" aria-label="Tutup">&times;</button>
+      </div>
+      <div id="modal-project-content" class="modal-body">
+        <!-- Content injected dynamically via portfolio.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> Atma Creative. Hak Cipta Dilindungi Undang-Undang.</div>
+        <div><a href="admin/login.html" style="font-size: 0.82rem; opacity: 0.7;">Panel Masuk CMS Admin &rarr;</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
+</html>
