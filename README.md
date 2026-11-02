@@ -2,12 +2,12 @@
 
 ## Identitas Mahasiswa
 
-- Nama: [Nama Lengkap]
+- Nama: Maulana JayaKusuma Atmaja
 - NIM: 2405101060
 - Kelas: 5D
-- Program Studi: [Program Studi]
+- Program Studi: Teknik Informartika
 - Mata Kuliah: Pemrograman Web Dasar
-- Tahun Akademik: [Tahun Akademik]
+- Tahun Akademik: 2026/2027
 
 ## Deskripsi
 
